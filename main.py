@@ -1,43 +1,44 @@
 import turtle as trtl
 
-my_turtles = []
-
-turtle_shapes = ["arrow", "turtle", "circle", "square", "triangle", "classic"]
-turtle_colors = ["red", "blue", "green", "orange", "purple", "gold"]
-
-class turtle:
+class TurtleClass:
     def __init__(self, shape, color):
         self.turtle = trtl.Turtle(shape)
-        self.turtle.penup()
         self.turtle.color(color)
-        self.turtle.pensize(2)
-        
-    def main(self, startx, starty, startDir, forwardLength):
+    
+    def main_move_function(self, startx, starty, angle):
+        self.turtle.penup()
         self.turtle.goto(startx, starty)
         self.turtle.pendown()
-        self.setheading(startDir)
-        self.turtle.right(45)
-        self.turtle.forward(forwardLength)
+        self.turtle.setheading(angle)
+        self.turtle.forward(100)
 
+    def get_x_pos(self):
+        return self.turtle.xcor()
 
+    def get_y_pos(self):
+        return self.turtle.ycor()
 
-for s in turtle_shapes:
-  t = trtl.Turtle(s)
-  my_turtles.append(t)
+turtle_shapes = ["arrow", "turtle", "circle", "square", "triangle", "classic"]
+turtle_colors = ["gold", "purple", "orange", "green", "blue", "red"]
 
- 
 startx = 0
 starty = 0
-variable = 0
+start_angle = 45
 
-for t in my_turtles:
-  t.goto(startx, starty)
-  t.right(90)     
-  t.forward(50)
+my_turtles = []
 
-  if 
-  startx = startx + 50
-  starty = starty + 50
+
+for i in range(len(turtle_shapes)):
+    my_turtle = TurtleClass(turtle_shapes[i], turtle_colors[i])
+
+    my_turtle.main_move_function(startx, starty, start_angle)
+
+    startx = my_turtle.get_x_pos()
+    starty = my_turtle.get_y_pos()
+    
+    start_angle -= 45
+
+    my_turtles.append(my_turtle)
 
 wn = trtl.Screen()
 wn.mainloop()
