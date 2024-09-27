@@ -3,10 +3,13 @@
 
 ## Questions about the Activity 
 ```
-How can I do this using classes?
-How will I make the turtle objects turn so that the final drawing is a circle?
-How will I make the objects start drawing from where the previous object was drawn?
+**How can I do this using classes?**
+**How will I make the turtle objects turn so that the final drawing is a circle?**
+**How will I make the objects start drawing from where the previous object was drawn?**
 
 ```
-#### Description Of The App 
- **My code creates a drawing where turtle objects are drawn into a circle. My program uses classes, functions, loops, and more!
+## Description Of The App 
+```
+ **My code creates a drawing where turtle objects are drawn into a circle. My program uses classes, functions, loops, and more!**
+
+```
