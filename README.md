@@ -10,7 +10,7 @@ How will I make the objects start drawing from where the previous object was dra
 ```
 ## Description Of The App 
 ```
- My code creates a drawing where turtle objects are drawn into a circle. My program uses classes, functions, loops, and more!
+ My code makes a drawing where turtle objects are drawn into a circle. My program uses classes, functions, loops, and more!
 
 ```
 ## Video Of The App
